@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  color: orange;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.btn, button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+section {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.servicios, .planes, .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card, .plan {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 200px;
+}
+
+.galeria img {
+  width: 200px;
+  height: 150px;
+}
+
+video {
+  width: 100%;
+  max-width: 500px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+textarea {
+  height: 80px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: orange;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
+.btn-bottom {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background: orange;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
